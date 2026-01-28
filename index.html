@@ -155,21 +155,21 @@
           aria-controls="pills-home"
           aria-selected="true"
         >
-          Home
+          <i class="fa-solid fa-table-cells"></i>
         </button>
       </li>
       <li class="nav-item" role="presentation">
         <button
           class="nav-link"
-          id="pills-profile-tab"
+          id="pills-cards-tab"
           data-bs-toggle="pill"
-          data-bs-target="#pills-profile"
+          data-bs-target="#pills-cards"
           type="button"
           role="tab"
-          aria-controls="pills-profile"
+          aria-controls="pills-cards"
           aria-selected="false"
         >
-          Profile
+          <i class="fa-solid fa-square"></i>
         </button>
       </li>
     </ul>
@@ -219,12 +219,61 @@
       </div>
       <div
         class="tab-pane fade"
-        id="pills-profile"
+        id="pills-cards"
         role="tabpanel"
-        aria-labelledby="pills-profile-tab"
+        aria-labelledby="pills-cards-tab"
         tabindex="0"
       >
-        <!-- Content for Profile page here: -->
+        <!-- Content for Cards page here: -->
+
+        <!-- New single card: -->
+        <div class="card" style="width: 18rem">
+          <div class="card-header">Featured Image</div>
+          <img
+            src="https://picsum.photos/id/16/300/250"
+            class="card-img-top"
+            alt="Random image from Lorem Picsum"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              View by the ocean.
+            </p>
+          </div>
+        </div>
+        <!-- End of new single card -->
+
+        <!-- New single card: -->
+        <div class="card" style="width: 18rem">
+          <div class="card-header">Most Recent Image</div>
+          <img
+            src="https://picsum.photos/id/47/300/250"
+            class="card-img-top"
+            alt="Random image from Lorem Picsum"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Black and white photo.
+            </p>
+          </div>
+        </div>
+        <!-- End of new single card -->
+
+        <!-- New single card: -->
+        <div class="card" style="width: 18rem">
+          <div class="card-header">Top Post</div>
+          <img
+            src="https://picsum.photos/300/250"
+            class="card-img-top"
+            alt="Random image from Lorem Picsum"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Random post with image.
+            </p>
+          </div>
+        </div>
+        <!-- End of new single card -->
+
       </div>
     </div>
 
