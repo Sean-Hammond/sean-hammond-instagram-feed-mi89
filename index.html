@@ -22,19 +22,6 @@
 
         <!-- Part of the main navbar that will be justified to the right -->
         <div class="d-flex justify-content-end">
-          <!-- [I think this is] all code for hamburger button to appear in smaller screen sizes: -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <!-- All code for the "Create a new post" button: -->
@@ -134,7 +121,7 @@
                   >
                     <i class="fa-solid fa-gear text-light"></i>
                   </button>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu dropdown-menu-end">
                     <li><a class="dropdown-item" href="#">Profile</a></li>
                     <li><a class="dropdown-item" href="#">Accesibility</a></li>
                     <li>
@@ -149,6 +136,19 @@
               </li>
             </ul>
           </div>
+
+          <!-- [I think this is] all code for hamburger button to appear in smaller screen sizes: -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
       </div>
     </nav>
@@ -257,42 +257,54 @@
         <!-- Content for Cards page here: -->
 
         <!-- New single card: -->
-        <div class="card mx-auto p-2 mb-3" style="width: 18rem">
-          <div class="card-header">Featured Image</div>
+        <div class="card mx-auto p-2 mb-3" style="width: 28rem">
+          <div class="card-header">
+            <h1>Featured Image</h1>
+            <p>1/1</p>
+          </div>
           <img
             src="https://picsum.photos/id/16/300/250"
             class="card-img-top"
             alt="Random image from Lorem Picsum"
           />
           <div class="card-body">
+            <p class="card-text fw-bold">82 Likes</p>
             <p class="card-text">View by the ocean.</p>
           </div>
         </div>
         <!-- End of new single card -->
 
         <!-- New single card: -->
-        <div class="card mx-auto p-2 mb-3" style="width: 18rem">
-          <div class="card-header">Most Recent Image</div>
+        <div class="card mx-auto p-2 mb-3" style="width: 28rem">
+          <div class="card-header">
+            <h1>Most Recent Image</h1>
+            <p>1/20</p>
+          </div>
           <img
             src="https://picsum.photos/id/47/300/250"
             class="card-img-top"
             alt="Random image from Lorem Picsum"
           />
           <div class="card-body">
+            <p class="card-text fw-bold">23 Likes</p>
             <p class="card-text">Black and white photo.</p>
           </div>
         </div>
         <!-- End of new single card -->
 
         <!-- New single card: -->
-        <div class="card mx-auto p-2 mb-3" style="width: 18rem">
-          <div class="card-header">Top Post</div>
+        <div class="card mx-auto p-2 mb-3" style="width: 28rem">
+          <div class="card-header">
+            <h1>Top Post</h1>
+            <p>1/25</p>
+          </div>
           <img
             src="https://picsum.photos/300/250"
             class="card-img-top"
             alt="Random image from Lorem Picsum"
           />
           <div class="card-body">
+            <p class="card-text fw-bold">99 Likes</p>
             <p class="card-text">Random post with image.</p>
           </div>
         </div>
