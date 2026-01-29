@@ -19,168 +19,175 @@
         <a class="navbar-brand" href="#"
           ><i class="fa-brands fa-instagram"></i> Instagram</a
         >
-        
-        <!-- Hamburger button which will appear in smaller screen sizes, I think: -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            
-            <!-- All code for the "Create a new post" button: -->
-            <li class="nav-item m-1">
-              <!-- Create a new post button to trigger modal -->
-              <button
-                type="button"
-                class="btn btn-success"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Create a new post
-              </button>
+        <!-- Part of the main navbar that will be justified to the right -->
+        <div class="d-flex justify-content-end">
+          <!-- [I think this is] all code for hamburger button to appear in smaller screen sizes: -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModal"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">
-                        Create a new post
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <!-- Modal content here: -->
-                      <label for="floatingTextarea" class="fw-bold mb-1">Caption:</label>
-                      <div class="form-floating mb-3">
-                        <textarea
-                          class="form-control"
-                          placeholder="Leave a comment here"
-                          id="floatingTextarea"
-                        ></textarea>
-                        <label for="floatingTextarea"
-                          >Add the caption of your post here</label
-                        >
-                      </div>
-                      <!-- Buttons under caption text area in modal -->
-                      <div
-                        class="btn-group"
-                        role="group"
-                        aria-label="Basic example"
-                      >
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <!-- All code for the "Create a new post" button: -->
+              <li class="nav-item m-1">
+                <!-- Create a new post button to trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Create a new post
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          Create a new post
+                        </h1>
                         <button
                           type="button"
-                          class="btn btn-outline-secondary bg-body-tertiary m-1 rounded"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Modal content here: -->
+                        <label for="floatingTextarea" class="fw-bold mb-1"
+                          >Caption:</label
                         >
-                          <i class="fa-solid fa-camera"></i>
-                        </button>
+                        <div class="form-floating mb-3">
+                          <textarea
+                            class="form-control"
+                            placeholder="Leave a comment here"
+                            id="floatingTextarea"
+                          ></textarea>
+                          <label for="floatingTextarea"
+                            >Add the caption of your post here</label
+                          >
+                        </div>
+                        <!-- Buttons under caption text area in modal -->
+                        <div
+                          class="btn-group"
+                          role="group"
+                          aria-label="Basic example"
+                        >
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary bg-body-tertiary m-1 rounded"
+                          >
+                            <i class="fa-solid fa-camera"></i>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary bg-body-tertiary m-1 rounded"
+                          >
+                            <i class="fa-solid fa-location-dot"></i>
+                          </button>
+                        </div>
+                        <!-- Modal footer: -->
+                      </div>
+                      <div class="modal-footer">
                         <button
                           type="button"
-                          class="btn btn-outline-secondary bg-body-tertiary m-1 rounded"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
                         >
-                          <i class="fa-solid fa-location-dot"></i>
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-success">
+                          Publish
                         </button>
                       </div>
-                      <!-- Modal footer: -->
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <button type="button" class="btn btn-success">
-                        Publish
-                      </button>
                     </div>
                   </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <!-- All code for navbar dropdown button: -->
-            <li class="nav-item m-1">
-            <div class="btn-group">
-              <button
-                type="button"
-                class="btn btn-secondary dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa-solid fa-gear text-light"></i>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Privacy and Data</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item text-danger" href="#">Log out</a>
-                </li>
-              </ul>
-            </div>
-            </li>
-
-          </ul>
+              <!-- All code for navbar dropdown button: -->
+              <li class="nav-item m-1">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-secondary dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-gear text-light"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Privacy and Data</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item text-danger" href="#">Log out</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
 
-    <!-- "Navigation" to select (1) Image grid or (2) Photo feed -->
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link active"
-          id="pills-home-tab"
-          data-bs-toggle="pill"
-          data-bs-target="#pills-home"
-          type="button"
-          role="tab"
-          aria-controls="pills-home"
-          aria-selected="true"
-        >
-          <i class="fa-solid fa-table-cells"></i>
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="pills-cards-tab"
-          data-bs-toggle="pill"
-          data-bs-target="#pills-cards"
-          type="button"
-          role="tab"
-          aria-controls="pills-cards"
-          aria-selected="false"
-        >
-          <i class="fa-solid fa-square"></i>
-        </button>
-      </li>
-    </ul>
+    <!-- "Navigation" to select (1) Image grid or (2) Photo feed: -->
+
+    <div class="d-flex justify-content-center">
+      <ul class="nav nav-pills mb-3 mx-auto p-3" id="pills-tab" role="tablist">
+        <li class="nav-item text-secondary" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            <i class="fa-solid fa-table-cells"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-cards-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-cards"
+            type="button"
+            role="tab"
+            aria-controls="pills-cards"
+            aria-selected="false"
+          >
+            <i class="fa-solid fa-square"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+
     <div class="tab-content" id="pills-tabContent">
       <div
         class="tab-pane fade show active"
@@ -250,7 +257,7 @@
         <!-- Content for Cards page here: -->
 
         <!-- New single card: -->
-        <div class="card mx-auto p-2" style="width: 18rem">
+        <div class="card mx-auto p-2 mb-3" style="width: 18rem">
           <div class="card-header">Featured Image</div>
           <img
             src="https://picsum.photos/id/16/300/250"
@@ -258,15 +265,13 @@
             alt="Random image from Lorem Picsum"
           />
           <div class="card-body">
-            <p class="card-text">
-              View by the ocean.
-            </p>
+            <p class="card-text">View by the ocean.</p>
           </div>
         </div>
         <!-- End of new single card -->
 
         <!-- New single card: -->
-        <div class="card mx-auto p-2" style="width: 18rem">
+        <div class="card mx-auto p-2 mb-3" style="width: 18rem">
           <div class="card-header">Most Recent Image</div>
           <img
             src="https://picsum.photos/id/47/300/250"
@@ -274,15 +279,13 @@
             alt="Random image from Lorem Picsum"
           />
           <div class="card-body">
-            <p class="card-text">
-              Black and white photo.
-            </p>
+            <p class="card-text">Black and white photo.</p>
           </div>
         </div>
         <!-- End of new single card -->
 
         <!-- New single card: -->
-        <div class="card mx-auto p-2" style="width: 18rem">
+        <div class="card mx-auto p-2 mb-3" style="width: 18rem">
           <div class="card-header">Top Post</div>
           <img
             src="https://picsum.photos/300/250"
@@ -290,13 +293,10 @@
             alt="Random image from Lorem Picsum"
           />
           <div class="card-body">
-            <p class="card-text">
-              Random post with image.
-            </p>
+            <p class="card-text">Random post with image.</p>
           </div>
         </div>
         <!-- End of new single card -->
-
       </div>
     </div>
 
