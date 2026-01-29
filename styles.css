@@ -1,0 +1,4 @@
+.card-header h1 {
+     /* The reason I used <h1>s is because they seem semantically correct as the main heading for each individual card. To make smaller to be like the example, I'm adjusting in CSS. */
+     font-size: 1rem;
+}
