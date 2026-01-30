@@ -1,3 +1,9 @@
+# Instagram Photo Feed Demo Website
+created by Sean-Hammond with instructions by 4Geeks Academy
+
+
+#  -- Original 4Geeks template README below: --
+
 # HTML Hello
 
 The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
